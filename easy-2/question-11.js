@@ -67,9 +67,9 @@ array
 --------------------------------------------------------------------------------
 For every element in the digitsArray that matches an index of the DIGITS
 array
-1. Iterate over the DIGITS array and find the index that matches each element in
-the digitsArray
-2.
+
+1. Iterate over the digitsArray and find the matching index in the DIGITS array
+2. push that value to the finalResult array
 3.
 4.
 5.
@@ -97,7 +97,6 @@ function integerToString(number) {
     }
     digitsArray.reverse();
   }
-  console.log(digitsArray);
 
   for (let i = 0; i < digitsArray.length; i++) {
     for (var j = 0; j < DIGITS.length; j++) {
@@ -110,8 +109,9 @@ function integerToString(number) {
   console.log(finalResult.join(""));
   return finalResult.join("");
 }
+
 // TEST CASES:
-// integerToString(4321);      // "4321"
+integerToString(4321);      // "4321"
 integerToString(0);         // "0"
-// integerToString(5000);      // "5000"
-// integerToString(1234567890);      // "1234567890"
+integerToString(5000);      // "5000"
+integerToString(1234567890);      // "1234567890"
