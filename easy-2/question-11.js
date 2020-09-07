@@ -46,8 +46,8 @@ OUTPUT:
 ---------------------------Data Structures and Algorithm------------------------
 1. Create a constant array of String numbers called DIGITS that will hold the
 individual
-2. Create a temporary variable and assign it the same value as the function argument
-digits of the number passed into the function.
+2. Create a temporary variable and assign it the same value as the function
+argument digits of the number passed into the function.
 3. create an empty array called digitsArray that will hold the numbers
 individual digits
 4. While the temporary variable is greater than 1
@@ -78,6 +78,10 @@ array
 8.
 9.
 10.
+
+if you can find a way to insert the string representation of the integer
+(instead of the digit itself) in your while block (lines 93-97), then you
+can eliminate the later for loops.
 */
 //-----------------------------------Code---------------------------------------
 function integerToString(number) {
@@ -102,7 +106,6 @@ function integerToString(number) {
     for (var j = 0; j < DIGITS.length; j++) {
       if (digitsArray[i] === j) {
         finalResult.push(DIGITS[j]);
-
       }
     }
   }
