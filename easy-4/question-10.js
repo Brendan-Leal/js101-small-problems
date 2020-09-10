@@ -1,6 +1,5 @@
 function swap(str) {
   let wordArray = str.split(" ");
-
   let finalResult = [];
 
   for (let i = 0; i < wordArray.length; i++) {
@@ -14,6 +13,7 @@ function swap(str) {
     let firstChar = charArray[0]; // stays 0
     let lastChar = charArray[charArray.length - 1];
     let middle = "";
+
     for (let i = 1; i < charArray.length - 1; i++) {
       middle += charArray[i];
     }

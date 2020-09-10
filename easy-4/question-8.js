@@ -19,8 +19,6 @@ function wordSizes(str) {
 
 console.log(letterCounter);
 return letterCounter;
-
-
 }
 
 
