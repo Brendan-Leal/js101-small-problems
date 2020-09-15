@@ -8,7 +8,6 @@ function reverse(array) {
     array[lastIndex] = holdValue;
     lastIndex -= 1;
   }
-  // console.log(array);
   return array;
 }
 

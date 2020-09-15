@@ -9,8 +9,6 @@ function isBalanced(str) {
     }
     if (parenthesesCount < 0) return false;
   }
-
-  // console.log(parenthesesCount);
   return parenthesesCount === 0;
 }
 
