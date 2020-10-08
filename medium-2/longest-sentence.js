@@ -73,7 +73,6 @@ function extractSentencesFrom(text) {
 
   charArray.forEach((char, i) => {
     if (PUNCTUATIONS.includes(char)) {
-      // console.log(`index of ${char} in text is ${text.indexOf(char)}`);
       extractionEnd = i + 1;
       sentences.push(text.slice(extractionStart, extractionEnd));
       extractionStart = extractionEnd;
